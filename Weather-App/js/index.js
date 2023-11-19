@@ -5,6 +5,12 @@ const checkWeather = async () => {
    const response = await fetch(API_URL + `&appid=${API_KEY}`);
    const data = await response.json();
    console.log(data);
+
+   document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "°C";
+   document.querySelector('.city').innerHTML = data.name;
+   document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
+   document.querySelector('.wind').innerHTML = Math.round(data.wind.speed) + " Km/h";
+
 }
 
 checkWeather();
