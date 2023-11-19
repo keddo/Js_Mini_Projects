@@ -6,19 +6,27 @@ const searchBtn = document.querySelector('.search button');
 const weatherIcon = document.querySelector('.weather-icon');
 
 const weatherInfo = document.querySelector('.weather');
+const errorBox = document.querySelector('.error');
+const errorBoxP = document.querySelector('.error p');
 
 const checkWeather = async (city) => {
    const response = await fetch(API_URL + city + `&appid=${API_KEY}`);
-   const data = await response.json();
+   if (response.status == 404) {
+       errorBox.style.display = "block";
+       errorBoxP.innerHTML += ` ${city}`;
+       weatherInfo.style.display = "none";
+   }else {
+    const data = await response.json();
 
-   document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "°C";
-   document.querySelector('.city').innerHTML = data.name;
-   document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
-   document.querySelector('.wind').innerHTML = Math.round(data.wind.speed) + " Km/h";
-   setWeatherIcon(data);
-
-   weatherInfo.style.display = 'block';
-
+    document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "°C";
+    document.querySelector('.city').innerHTML = data.name;
+    document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
+    document.querySelector('.wind').innerHTML = Math.round(data.wind.speed) + " Km/h";
+    setWeatherIcon(data);
+    searchBox.value = "";
+    weatherInfo.style.display = 'block';
+    errorBox.style.display = 'none';
+   }
 }
 
 const setWeatherIcon = (data) => {
@@ -45,3 +53,4 @@ const setWeatherIcon = (data) => {
 searchBtn.addEventListener('click', () => {
     checkWeather(searchBox.value);
 });
+

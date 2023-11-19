@@ -96,3 +96,20 @@ body {
     font-size: 28px;
     margin-top: -6px;
 }
+
+.error {
+    background-color: #ffdddd;
+    border: 1px solid #f44336;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.error p {
+    color: #f44336;
+    font-weight: bold;
+}
