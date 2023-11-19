@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -38,4 +37,19 @@ body {
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+    
 }
