@@ -6,3 +6,8 @@ Experience real-time weather updates with this simple and user-friendly web appl
               1. HTML
               2. CSS
               3. Vanilla JavaScript
+## Back-end data used from: ##
+OpenWeatherMap is an online service, owned by OpenWeather Ltd, that provides global weather data via API, including current weather data, forecasts, nowcasts and historical weather data for any geographical location. The company provides a minute-by-minute hyperlocal precipitation forecast for any location.
+API Provider    | API URL
+--------------- | -------------
+OpenWeatherMap  | https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
