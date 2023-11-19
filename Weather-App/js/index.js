@@ -5,18 +5,19 @@ const searchBox = document.querySelector('.search input');
 const searchBtn = document.querySelector('.search button');
 const weatherIcon = document.querySelector('.weather-icon');
 
-
+const weatherInfo = document.querySelector('.weather');
 
 const checkWeather = async (city) => {
    const response = await fetch(API_URL + city + `&appid=${API_KEY}`);
    const data = await response.json();
-   console.log(data);
 
    document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "°C";
    document.querySelector('.city').innerHTML = data.name;
    document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
    document.querySelector('.wind').innerHTML = Math.round(data.wind.speed) + " Km/h";
    setWeatherIcon(data);
+
+   weatherInfo.style.display = 'block';
 
 }
 
