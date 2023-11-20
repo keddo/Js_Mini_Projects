@@ -13,7 +13,7 @@ This repository features a collection of mini-sized projects implemented using p
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Vue][Vue.js]][https://vuejs.org/]
+* [![Vue][Vue.js]][Vue-url]
 
 
 
