@@ -20,3 +20,8 @@ let createPassword = () => {
 
     passwordBox.value = password;
 }
+
+let copyPassword = () => {
+    passwordBox.select();
+    document.execCommand('copy');
+}
