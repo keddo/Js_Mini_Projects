@@ -8,3 +8,9 @@ This repository features a collection of mini-sized projects implemented using p
 * [Todo List App](./Todo-list-App)
 * [Random Password Generator](./Random-password-generator)
 * [Quiz App](./Quiz-App)
+
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+* [![HTML5][HTML5]][https://www.w3.org/]
