@@ -13,7 +13,7 @@ This repository features a collection of mini-sized projects implemented using p
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Vue][Vue.js]][Vue-url]
+* [![HTML5]][HTML5-url]
 
 
 
@@ -34,3 +34,4 @@ This section should list any major frameworks/libraries used to bootstrap your p
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[HTML5-url]: https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHTML5psig=AOvVaw3AOo3hp5Qc06wDgpndEOws&ust=1700575812322000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCKj0t-Lg0oIDFQAAAAAdAAAAABAE 
